@@ -1,0 +1,235 @@
+.header {
+  width: 100%;
+
+  @media (max-width: $max-mobile) {
+    height: 520px;
+    background: #00306C url("../img/template-images/mobile-background.jpg") no-repeat 100% 100%;
+    background-size: 100%;
+  }
+
+  @media (min-width: $min-tablet) {
+    height: 638px;
+    background: #00306C url("../img/template-images/tab-background.jpg") no-repeat 100% 100%;
+    background-size: 100%;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: $desktop-page-width;
+    height: 650px;
+    background: #00306C url("../img/template-images/desktop-background.jpg") no-repeat 100% 100%;
+  }
+}
+
+.header__wrapper {
+  display: grid;
+}
+
+.header__link {
+  @media (max-width: $max-mobile) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #011C40;
+    text-decoration: none;
+  }
+
+  @media (min-width: $min-tablet) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F9FBFD;
+    text-decoration: none;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.header__link:hover {
+  @media (min-width: $min-desktop) {
+    display: block;
+    transform: scale(1.03);
+    transition: 60ms;
+  }
+}
+
+.header__nav--closed {
+  @media (max-width: $max-mobile) {
+    display: none;
+  }
+}
+
+.header__nav .page__menu-list{
+  @media (max-width: $max-mobile) {
+    position: absolute;
+    background: #FFFFFF;
+    padding: 85px 25px 25px 25px;
+    box-sizing: border-box;
+  }
+}
+
+.header__nav .page__menu-item {
+  @media (max-width: $max-mobile) {
+    margin-bottom: 28px;
+  }
+}
+
+.header__content-wrapper {
+  @media (max-width: $max-mobile) {
+    margin: 185px 0 0 0;
+  }
+
+  @media (min-width: $min-tablet) {
+    align-self: center;
+    margin: 180px 0 0 95px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin: 210px 0 0 95px;
+  }
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-mobile) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 125%;
+    color: #F9FBFD;
+    width: 265px;
+  }
+
+  @media (min-width: $min-tablet) {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: #F9FBFD;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 66px;
+  }
+}
+
+.header__description {
+  padding: 0;
+  margin: 0;
+  color: #F9FBFD;
+  font-weight: 400;
+
+  @media (max-width: $max-mobile) {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $min-tablet) {
+    margin-top: 29px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.header__menu-button-container {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+  @media (min-width: $min-desktop) {
+    display: none;
+  }
+}
+.header__burger {
+
+  @media (min-width: $min-tablet) {
+    width: 72px;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: none;
+  }
+}
+
+.header__burger--close {
+  @media (max-width: $max-mobile) {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+}
+
+.header__burger-button,
+.header__burger-button::before,
+.header__burger-button::after {
+  @media (max-width: $max-mobile) {
+    position: relative;
+    width: 22.5px;
+    height: 2px;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0;
+    display: block;
+  }
+
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
+}
+
+.header__burger-button::before,
+.header__burger-button::after {
+  @media (max-width: $max-mobile) {
+    content: '';
+    position: absolute;
+    top: -7.25px;
+  }
+
+  @media (min-width: $min-tablet) {
+    content: '';
+    position: absolute;
+    top: -7.25px;
+  }
+}
+
+.header__burger-button::after {
+  @media (max-width: $max-mobile) {
+    top: 7.25px;
+  }
+
+  @media (min-width: $min-tablet) {
+    top: 7.25px;
+  }
+}
+
+.header__burger-button--close {
+  border: none;
+  width: 13px;
+  height: 13px;
+  background: url("../img/template-images/close.svg") no-repeat 50% 50%;
+}
+
+
