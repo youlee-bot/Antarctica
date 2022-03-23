@@ -3,20 +3,20 @@
 
   @media (max-width: $max-mobile) {
     min-height: 997px;
-    background: #D7E5F4 url("../img/template-images/mobile-features-background.jpg") no-repeat;
+    background: #D7E5F4 url("../../imgimg/template-images/mobile-features-background.jpg") no-repeat;
     background-size: 100%;
   }
 
   @media (min-width: $min-tablet) {
     min-height: 588px;
-    background: #D7E5F4 url("../img/template-images/tab-features-background.jpg") no-repeat;
+    background: #D7E5F4 url("../../imgimg/template-images/tab-features-background.jpg") no-repeat;
     background-size: 100%;
   }
 
   @media (min-width: $min-desktop) {
     width: $desktop-page-width;
     min-height: 562px;
-    background: #D7E5F4 url("../img/template-images/desktop-features-background.jpg") no-repeat;
+    background: #D7E5F4 url("../../imgimg/template-images/desktop-features-background.jpg") no-repeat;
   }
 }
 

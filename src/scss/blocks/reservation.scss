@@ -3,20 +3,20 @@
 
   @media (max-width: $max-mobile) {
     min-height: 760px;
-    background: #D7E5F4 url("../img/template-images/reservation-background-mobile.jpg") no-repeat;
+    background: #D7E5F4 url("../../imgimg/template-images/reservation-background-mobile.jpg") no-repeat;
     background-size: 100%;
   }
 
   @media (min-width: $min-tablet) {
     min-height: 805px;
-    background: #D7E5F4 url("../img/template-images/reservation-background-tab.jpg") no-repeat;
+    background: #D7E5F4 url("../../imgimg/template-images/reservation-background-tab.jpg") no-repeat;
     background-size: 100%;
   }
 
   @media (min-width: $min-desktop) {
     width: $desktop-page-width;
     min-height: 555px;
-    background: #D7E5F4 url("../img/template-images/reservation-background-desktop.jpg") no-repeat;
+    background: #D7E5F4 url("../../imgimg/template-images/reservation-background-desktop.jpg") no-repeat;
   }
 }
 

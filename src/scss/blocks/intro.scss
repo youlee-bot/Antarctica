@@ -2,18 +2,18 @@
   display: grid;
   grid-auto-rows: min-content 1fr;
   @media (max-width: $max-mobile) {
-    background: #FFFFFF url("../img/template-images/mobile-intro-background.jpg") bottom no-repeat;
+    background: #FFFFFF url("../../imgimg/template-images/mobile-intro-background.jpg") bottom no-repeat;
     padding-bottom: 186px;
     box-sizing: border-box;
   }
 
   @media (min-width: $min-tablet) {
-    background: #FFFFFF url("../img/template-images/tab-intro-background.jpg") right  top no-repeat;
+    background: #FFFFFF url("../../imgimg/template-images/tab-intro-background.jpg") right  top no-repeat;
     min-height: 264px;
   }
 
   @media (min-width: $min-desktop) {
-    background: #FFFFFF url("../img/template-images/desctop-intro-background.jpg") right top no-repeat;
+    background: #FFFFFF url("../../imgimg/template-images/desctop-intro-background.jpg") right top no-repeat;
     min-height: 301px;
   }
 }
