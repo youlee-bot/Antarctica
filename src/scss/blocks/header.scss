@@ -195,7 +195,7 @@ $min-desktop: 1024px;
 .header__burger {
 
   @media (min-width: $min-tablet) {
-    width: 72px;
+    display: none;
   }
 
   @media (min-width: $min-desktop) {
