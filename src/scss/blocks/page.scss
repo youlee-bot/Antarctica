@@ -104,7 +104,6 @@ $min-desktop: 1024px;
   line-height: 140%;
   color: #011C40;
   margin: 0;
-  padding: 0;
   text-align: center;
 
   @media (max-width: $max-mobile) {
@@ -123,7 +122,6 @@ $min-desktop: 1024px;
 
 .page__h3 {
   padding: 0;
-  margin: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 140%;
