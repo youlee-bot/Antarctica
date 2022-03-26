@@ -2,22 +2,26 @@ const menuButton = document.querySelector('.header__burger-button ');
 const menuButtonContainer = document.querySelector('.header__menu-button-container');
 const menuContainer = document.querySelector('.header__nav');
 const logo = document.querySelector('.page__logo')
+const contactForm = document.querySelector('.reservation__contact-form');
+const page = document.querySelector('.page');
 
 const onMenuClick = (evt) => {
   if (menuButton.className === ('header__burger-button')) {
     menuButton.className = ('header__burger-button--close');
     menuButtonContainer.classList.toggle('header__burger');
     menuContainer.classList.toggle('header__nav--closed');
-    logo.classList.toggle('page__logo-menu--opened')
+    logo.classList.toggle('page__logo-menu--opened');
+    page.classList.toggle('page__overflow');
     return;
   }
   menuButton.className = ('header__burger-button');
   menuButtonContainer.classList.toggle('header__burger');
   menuContainer.classList.toggle('header__nav--closed');
-  logo.classList.toggle('page__logo-menu--opened')
+  logo.classList.toggle('page__logo-menu--opened');
+  page.classList.toggle('page__overflow');
 }
 
-menuButton.addEventListener('click', onMenuClick)
+menuButtonContainer.addEventListener('click', onMenuClick)
 
 const smoothLinks = document.querySelectorAll('.page__menu-link');
 for (let smoothLink of smoothLinks) {
@@ -42,3 +46,27 @@ if (window.screen.width < 1160) {
     })
   }
 }
+
+
+
+const onModalSubmit = (evt) => {
+  evt.preventDefault();
+  const regexpTel = /^\d{10}$/;
+  const regexpEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const regexpName = /^S([а-яА-яa-zA-z]+\s)+([а-яА-яa-zA-z]+)/ig;
+
+  const name = document.querySelector('.contact-form__input[name=name]');
+  const email = document.querySelector('.contact-form__input[name=email]');
+  const phone = document.querySelector('.contact-form__input[name=phone]');
+  if (regexpName.test(name.value)) {
+    name.classList.add('contact-form__invalid-input');
+    }
+  if (!regexpEmail.test(email.value)) {
+    email.classList.add('contact-form__invalid-input');
+  }
+  if (!regexpTel.test(phone.value)) {
+    phone.classList.add('contact-form__invalid-input');
+  }
+}
+
+contactForm.addEventListener('submit', onModalSubmit);
