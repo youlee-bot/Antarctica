@@ -3,14 +3,23 @@
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   width: 403px;
   height: 455px;
-  padding: 50px;
   box-sizing: border-box;
 
   @media (max-width: $max-mobile) {
     width: 290px;
     min-height: 460px;
-    padding: 30px;
+    padding: 34px 30px;
   }
+
+  @media (min-width: $min-tablet) {
+    padding: 40px 50px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin: 2px 0 0 9px;
+    padding: 41px 50px;
+  }
+
 }
 
 .contact-form__h3 {
@@ -21,18 +30,30 @@
   margin: 0;
   padding: 0;
 
+  br {
+    display: none;
+  }
+
   @media (max-width: $max-mobile) {
     text-align: center;
     line-height: 140%;
+
+    br {
+      display: block;
+    }
   }
 }
 
 .contact-form__fieldset {
-  margin: 35px 0;
+  margin: 27px 0 27px 2px;
   border: none;
   padding: 0;
   display: grid;
   gap: 20px;
+
+  @media (max-width: $max-mobile) {
+    margin: 27px 0 22px 2px;
+  }
 }
 
 .contact-form__input {
@@ -70,6 +91,18 @@
   gap: 5px;
 }
 
+.contact-form__personal-data {
+  @media (min-width: $min-desktop) {
+    cursor: pointer;
+  }
+}
+
+.contact-form__personal-data-input {
+  @media (min-width: $min-desktop) {
+    cursor: pointer;
+  }
+}
+
 .contact-form__button {
   width: 100%;
   height: 43px;
@@ -85,4 +118,8 @@
     transition: 160ms;
     cursor: pointer;
   }
+}
+
+.contact-form__invalid-input {
+  border: 2px solid red;
 }

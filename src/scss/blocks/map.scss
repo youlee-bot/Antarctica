@@ -7,8 +7,12 @@
 
   @media (min-width: $min-tablet) {
     grid-template-areas: "map desc" "map address" "map tel";
-    grid-auto-rows: max-content;
+    grid-auto-rows: 1fr min-content 1fr;
     column-gap: 30px;
+  }
+
+  @media (min-width: $min-desktop) {
+    grid-auto-rows: 1fr min-content 1fr;
   }
 }
 
@@ -44,9 +48,13 @@
   @media (min-width: $min-tablet) {
     grid-area: desc;
     align-self: end;
+    margin: 60px 0 0 0;
   }
 
   @media (min-width: $min-desktop) {
+    align-self: center;
+    padding-top: 10px;
+    margin: 0;
     br {
       display: block;
     }
@@ -65,33 +73,45 @@
     content: "";
     width: 18px;
     height: 22px;
-    background: url("../../imgimg/template-images/map-point.svg") 50% 50% no-repeat;
+    background: url("../../img/template-images/map-point.svg") 50% 50% no-repeat;
     left: -28px;
     top: -5px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin:16px 0 0px 28px;
+    &::before {
+      top: -3px;
+    }
   }
 
   @media (min-width: $min-tablet) {
     grid-area: address;
     align-self: center;
+    margin:30px 0 10px 28px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin: 0 0 10px 28px;
   }
 }
 
 .map__phone {
   margin-left: 28px;
   position: relative;
-  font-size: 16px;
-  line-height: 150%;
-  color: #011C40;
-  text-decoration: none;
 
   &::before {
     position: absolute;
     content: "";
     width: 18px;
     height: 18px;
-    background: url("../../imgimg/template-images/phone.svg") 50% 50% no-repeat;
+    background: url("../../img/template-images/phone.svg") 50% 50% no-repeat;
     left: -28px;
     top: -5px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin: -19px 0 0 28px;
   }
 
   @media (min-width: $min-tablet) {
@@ -101,5 +121,17 @@
       top: 10px;
       transform: translateY(-50%);
     }
+    margin: 10px 0 0 28px;
   }
+
+  @media (min-width: $min-desktop) {
+    margin: 10px 0 0 28px;
+  }
+}
+
+.map__phone-link {
+  font-size: 16px;
+  line-height: 150%;
+  color: #011C40;
+  text-decoration: none;
 }

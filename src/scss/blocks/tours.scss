@@ -8,15 +8,15 @@
   justify-content: center;
 
   @media (max-width: $max-mobile) {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   @media (min-width: $min-tablet) {
-    margin-top: 60px;
+    margin-top: 48px;
   }
 
   @media (min-width: $min-desktop) {
-    margin-top: 60px;
+    margin-top: 49px;
   }
 }
 
@@ -34,5 +34,11 @@
   @media (min-width: $min-desktop) {
     width: 260px;
     height: 386px;
+  }
+}
+
+.tours__h2 {
+  @media (min-width: $min-desktop) {
+    padding-top: 18px;
   }
 }

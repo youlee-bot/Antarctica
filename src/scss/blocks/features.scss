@@ -3,34 +3,45 @@
 
   @media (max-width: $max-mobile) {
     min-height: 997px;
-    background: #D7E5F4 url("../../imgimg/template-images/mobile-features-background.jpg") no-repeat;
+    background: #D7E5F4 url("../../img/template-images/mobile-features-background.jpg") no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: #D7E5F4 url("../../img/template-images/mobile-features-background@2x.jpg") no-repeat;
+      background-size: 100%;
+    }
     background-size: 100%;
   }
 
   @media (min-width: $min-tablet) {
     min-height: 588px;
-    background: #D7E5F4 url("../../imgimg/template-images/tab-features-background.jpg") no-repeat;
+    background: #D7E5F4 url("../../img/template-images/tab-features-background.jpg") no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: #D7E5F4 url("../../img/template-images/tab-features-background@2x.jpg") no-repeat;
+      background-size: 100%;
+    }
     background-size: 100%;
   }
 
   @media (min-width: $min-desktop) {
     width: $desktop-page-width;
     min-height: 562px;
-    background: #D7E5F4 url("../../imgimg/template-images/desktop-features-background.jpg") no-repeat;
+    background: #D7E5F4 url("../../img/template-images/desktop-features-background.jpg") no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: #D7E5F4 url("../../img/template-images/desktop-features-background@2x.jpg") no-repeat;
+    }
   }
 }
 
 .features__h2 {
   @media (max-width: $max-mobile) {
-    padding: 65px 0 40px 0;
+    padding: 60px 0 32px 0;
   }
 
   @media (min-width: $min-tablet) {
-    padding: 100px 0 60px 0;
+    padding: 91px 0 51px 0;
   }
 
   @media (min-width: $min-desktop) {
-    padding: 120px 0 60px 0;
+    padding: 110px 0 51px 0;
   }
 }
 
@@ -81,11 +92,24 @@
 }
 
 .features__h3 {
-  margin: 25px 0 20px 0;
+  @media (max-width: $max-mobile) {
+    margin: 26px 0 20px 0;
+  }
+
+  @media (min-width: $min-tablet) {
+    margin: 26px 0 20px 0;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin: 31px 0 20px 0;
+    br {
+      display: none;
+    }
+  }
 }
 
 .features__description {
-  margin: 0;
+  margin: -10px 0 0 0;
   padding: 0;
   font-weight: 400;
   font-size: 14px;

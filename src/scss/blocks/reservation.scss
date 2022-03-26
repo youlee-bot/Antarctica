@@ -3,20 +3,33 @@
 
   @media (max-width: $max-mobile) {
     min-height: 760px;
-    background: #D7E5F4 url("../../imgimg/template-images/reservation-background-mobile.jpg") no-repeat;
+    background: #D7E5F4 url("../../img/template-images/reservation-background-mobile.jpg") no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: #D7E5F4 url("../../img/template-images/reservation-background-mobile@2x.jpg") no-repeat;
+      background-size: 100%;
+    }
     background-size: 100%;
   }
 
   @media (min-width: $min-tablet) {
     min-height: 805px;
-    background: #D7E5F4 url("../../imgimg/template-images/reservation-background-tab.jpg") no-repeat;
+    background: #D7E5F4 url("../../img/template-images/reservation-background-tab.jpg") no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: #D7E5F4 url("../../img/template-images/reservation-background-tab@2x.jpg") no-repeat;
+      background-size: 100%;
+    }
     background-size: 100%;
   }
 
   @media (min-width: $min-desktop) {
     width: $desktop-page-width;
     min-height: 555px;
-    background: #D7E5F4 url("../../imgimg/template-images/reservation-background-desktop.jpg") no-repeat;
+    background: #D7E5F4 url("../../img/template-images/reservation-background-desktop.jpg") no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: #D7E5F4 url("../../img/template-images/reservation-background-desktop@2x.jpg") no-repeat;
+      background-size: 100%;
+    }
+    background-size: 100%;
   }
 }
 
@@ -46,7 +59,7 @@
 .reservation__h2 {
   color: #011C40;
   font-weight: 700;
-  margin: 0;
+  margin: -9px 0 0 0;
   padding: 0;
 
   @media (max-width: $max-mobile) {
@@ -65,7 +78,7 @@
     grid-area: title;
     align-self: end;
     font-size: 40px;
-    margin-left: 40px;
+    margin-left: 60px;
   }
 }
 
@@ -75,35 +88,41 @@
   padding: 0;
   margin:0;
 
+  br {
+    display: none;
+  }
+
   @media (max-width: $max-mobile) {
     font-size: 16px;
     line-height: 140%;
     text-align: center;
-    margin:25px 0 0 0;
+    margin:17px 0 0 0;
     width: 257px;
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: $min-tablet) {
     font-size: 18px;
     line-height: 150%;
-    margin:25px 0 0 0;
+    margin:0;
+    width: 352px;
   }
 
   @media (min-width: $min-desktop) {
     grid-area: desc;
-    width:  352px;
-    margin: 5px 0 0 0;
-    margin:0 0 0 40px;
+    margin: 0 0 0 60px;
   }
 }
 
 .reservation__contact-form {
   @media (max-width: $max-mobile) {
-    margin-top: 40px;
+    margin-top: 31px;
   }
 
   @media (min-width: $min-tablet) {
-    margin-top: 60px;
+    margin-top: 53px;
   }
 
   @media (min-width: $min-desktop) {
