@@ -51,9 +51,13 @@ if (window.screen.width < 1160) {
 
 const onModalSubmit = (evt) => {
   evt.preventDefault();
-  const regexpTel = /^\d{10}$/;
+  const regexpTel = /^\d$/;
   const regexpEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   const regexpName = /^S([а-яА-яa-zA-z]+\s)+([а-яА-яa-zA-z]+)/ig;
+
+  name.classList.remove('contact-form__invalid-input');
+  email.classList.remove('contact-form__invalid-input');
+  phone.classList.remove('contact-form__invalid-input');
 
   const name = document.querySelector('.contact-form__input[name=name]');
   const email = document.querySelector('.contact-form__input[name=email]');

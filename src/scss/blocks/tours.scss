@@ -48,6 +48,15 @@ $min-desktop: 1024px;
 }
 
 .tours__h2 {
+  @media (max-width: $max-mobile) {
+    padding: 5px 0 0 0;
+    text-align: center;
+  }
+
+  @media (min-width: $min-tablet) {
+    text-align: center;
+  }
+
   @media (min-width: $min-desktop) {
     padding-top: 18px;
   }

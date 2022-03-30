@@ -13,9 +13,9 @@ $min-desktop: 1024px;
 
   @media (max-width: $max-mobile) {
     min-height: 997px;
-    background: #D7E5F4 url("../../img/template-images/mobile-features-background.jpg") no-repeat;
+    background: #D7E5F4 url("../img/template-images/mobile-features-background.jpg") no-repeat;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #D7E5F4 url("../../img/template-images/mobile-features-background@2x.jpg") no-repeat;
+      background: #D7E5F4 url("../img/template-images/mobile-features-background@2x.jpg") no-repeat;
       background-size: 100%;
     }
     background-size: 100%;
@@ -23,9 +23,9 @@ $min-desktop: 1024px;
 
   @media (min-width: $min-tablet) {
     min-height: 588px;
-    background: #D7E5F4 url("../../img/template-images/tab-features-background.jpg") no-repeat;
+    background: #D7E5F4 url("../img/template-images/tab-features-background.jpg") no-repeat;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #D7E5F4 url("../../img/template-images/tab-features-background@2x.jpg") no-repeat;
+      background: #D7E5F4 url("../img/template-images/tab-features-background@2x.jpg") no-repeat;
       background-size: 100%;
     }
     background-size: 100%;
@@ -34,24 +34,27 @@ $min-desktop: 1024px;
   @media (min-width: $min-desktop) {
     width: $desktop-page-width;
     min-height: 562px;
-    background: #D7E5F4 url("../../img/template-images/desktop-features-background.jpg") no-repeat;
+    background: #D7E5F4 url("../img/template-images/desktop-features-background.jpg") no-repeat;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #D7E5F4 url("../../img/template-images/desktop-features-background@2x.jpg") no-repeat;
+      background: #D7E5F4 url("../img/template-images/desktop-features-background@2x.jpg") no-repeat;
     }
   }
 }
 
 .features__h2 {
   @media (max-width: $max-mobile) {
-    padding: 60px 0 32px 0;
+    padding: 64px 0 10px 0;
+    text-align: center;
   }
 
   @media (min-width: $min-tablet) {
-    padding: 91px 0 51px 0;
+    padding: 91px 0 29px 0;
+    text-align: center;
   }
 
   @media (min-width: $min-desktop) {
-    padding: 110px 0 51px 0;
+    padding: 112px 0 24px;
+    text-align: left;
   }
 }
 

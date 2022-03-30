@@ -10,35 +10,35 @@ $min-desktop: 1024px;
 
 .page-content__intro {
   @media (max-width: $max-mobile) {
-    padding: 58px 0;
+    padding: 37px 0 40px 0;
   }
 
   @media (min-width: $min-tablet) {
-    padding: 100px 0;
+    padding: 100px 0 79px 0;
   }
 
   @media (min-width: $min-desktop) {
-    padding: 120px 0;
+    padding: 120px 0 97px 0;
   }
 }
 
 .page-content__tours {
   @media (max-width: $max-mobile) {
-    padding: 62px 0;
+    padding: 39px 0 62px 0;
   }
 
   @media (min-width: $min-tablet) {
-    padding: 93px 0;
+    padding: 71px 0 91px 0;
   }
 
   @media (min-width: $min-desktop) {
-    padding: 90px 0;
+    padding: 69px 0 74px 0;
   }
 }
 
 .page-content__map {
   @media (max-width: $max-mobile) {
-    padding: 53px 0 59px 0;
+    padding: 22px 0 59px 0;
   }
 
   @media (min-width: $min-tablet) {
@@ -46,7 +46,7 @@ $min-desktop: 1024px;
   }
 
   @media (min-width: $min-desktop) {
-    padding: 120px 0 95px 0;
+    padding: 74px 0 106px 0;
   }
 }
 
@@ -60,6 +60,6 @@ $min-desktop: 1024px;
   }
 
   @media (min-width: $min-desktop) {
-    margin: 30px 0;
+    margin: 46px 0;
   }
 }

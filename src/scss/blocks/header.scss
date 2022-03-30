@@ -13,20 +13,20 @@ $min-desktop: 1024px;
 
   @media (max-width: $max-mobile) {
     min-height: 500px;
-    background: #00306C url("../../img/template-images/mobile-background.jpg") no-repeat 100% 100%;
+    background: #00306C url("../img/template-images/mobile-background.jpg") no-repeat 100% 100%;
     background-size: 100%;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #00306C url("../../img/template-images/mobile-background@2x.jpg") no-repeat 100% 100%;
+      background: #00306C url("../img/template-images/mobile-background@2x.jpg") no-repeat 100% 100%;
       background-size: 100%;
     }
   }
 
   @media (min-width: $min-tablet) {
     min-height: 638px;
-    background: #00306C url("../../img/template-images/tab-background.jpg") no-repeat 100% 100%;
+    background: #00306C url("../img/template-images/tab-background.jpg") no-repeat 100% 100%;
     background-size: 100%;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #00306C url("../../img/template-images/tab-background@2x.jpg") no-repeat 100% 100%;
+      background: #00306C url("../img/template-images/tab-background@2x.jpg") no-repeat 100% 100%;
       background-size: 100%;
     }
   }
@@ -34,9 +34,9 @@ $min-desktop: 1024px;
   @media (min-width: $min-desktop) {
     width: $desktop-page-width;
     min-height: 650px;
-    background: #00306C url("../../img/template-images/desktop-background.jpg") no-repeat 100% 100%;
+    background: #00306C url("../img/template-images/desktop-background.jpg") no-repeat 100% 100%;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #00306C url("../../img/template-images/desktop-background@2x.jpg") no-repeat 100% 100%;
+      background: #00306C url("../img/template-images/desktop-background@2x.jpg") no-repeat 100% 100%;
       background-size: 100%;
     }
   }

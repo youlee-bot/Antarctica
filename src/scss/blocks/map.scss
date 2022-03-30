@@ -53,6 +53,7 @@ $min-desktop: 1024px;
     font-size: 18px;
     line-height: 150%;
     color: #011C40;
+    margin: 35px 0 0 0;
   }
 
   @media (min-width: $min-tablet) {
@@ -63,7 +64,7 @@ $min-desktop: 1024px;
 
   @media (min-width: $min-desktop) {
     align-self: center;
-    padding-top: 10px;
+    padding-top: 74px;
     margin: 0;
     br {
       display: block;
@@ -102,7 +103,7 @@ $min-desktop: 1024px;
   }
 
   @media (min-width: $min-desktop) {
-    margin: 0 0 10px 28px;
+    margin: 37px 0 10px 28px;
   }
 }
 

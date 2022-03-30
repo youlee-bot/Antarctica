@@ -12,28 +12,28 @@ $min-desktop: 1024px;
   display: grid;
   grid-auto-rows: min-content 1fr;
   @media (max-width: $max-mobile) {
-    background: #FFFFFF url("../../img/template-images/mobile-intro-background.jpg") bottom no-repeat;
+    background: #FFFFFF url("../img/template-images/mobile-intro-background.jpg") bottom no-repeat;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background: #FFFFFF url("../../img/template-images/mobile-intro-background@2x.jpg") bottom no-repeat;
       background-size: 290px;
     }
-    padding-bottom: 225px;
+    padding-bottom: 239px;
     box-sizing: border-box;
   }
 
   @media (min-width: $min-tablet) {
-    background: #FFFFFF url("../../img/template-images/tab-intro-background.jpg") right  top no-repeat;
+    background: #FFFFFF url("../img/template-images/tab-intro-background.jpg") right  top no-repeat;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #FFFFFF url("../../img/template-images/tab-intro-background@2x.jpg") right  top no-repeat;
+      background: #FFFFFF url("../img/template-images/tab-intro-background@2x.jpg") right  top no-repeat;
       background-size: 324px;
     }
     min-height: 264px;
   }
 
   @media (min-width: $min-desktop) {
-    background: #FFFFFF url("../../img/template-images/desctop-intro-background.jpg") right top no-repeat;
+    background: #FFFFFF url("../img/template-images/desctop-intro-background.jpg") right top no-repeat;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #FFFFFF url("../../img/template-images/desctop-intro-background@2x.jpg") right top no-repeat;
+      background: #FFFFFF url("../img/template-images/desctop-intro-background@2x.jpg") right top no-repeat;
       background-size: 560px;
     }
     min-height: 301px;
@@ -76,8 +76,12 @@ $min-desktop: 1024px;
   font-size: 16px;
   line-height: 150%;
 
+  @media (max-width: $max-mobile) {
+    margin: 0;
+  }
+
   @media (min-width: $min-tablet) {
-  width: 324px;
+    width: 324px;
   }
 
   @media (min-width: $min-desktop) {

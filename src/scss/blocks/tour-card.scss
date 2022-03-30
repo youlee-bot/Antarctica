@@ -37,17 +37,17 @@ $min-desktop: 1024px;
   width: 100%;
 
   @media (max-width: $max-mobile) {
-    bottom: 30px;
+    bottom: 14px;
     left: 25px;
   }
 
   @media (min-width: $min-tablet) {
-    bottom: 40px;
+    bottom: 21px;
     left: 35px;
   }
 
   @media (min-width: $min-desktop) {
-    bottom: 40px;
+    bottom: 16px;
     left: 30px;
   }
 }
@@ -73,7 +73,7 @@ $min-desktop: 1024px;
 }
 
 .tour-card__container:hover .tour-card__h3 {
-  top: 42px;
+  top: 27px;
   left: 25px;
   transform: translateY(-50%);
   bottom: auto;
@@ -122,7 +122,7 @@ $min-desktop: 1024px;
   font-size: 15px;
   line-height: 140%;
   color: #F9FBFD;
-  margin: 13px 0 0 0;
+  margin: 14px 0 0 0;
   padding: 0;
 }
 
